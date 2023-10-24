@@ -16,7 +16,11 @@
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+    title: 'KENZH Shop',
+})
+</script>
 
 <style scoped>
 h2 {

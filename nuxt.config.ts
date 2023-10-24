@@ -3,5 +3,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-  ]
+  ],
+  app: {
+    head: {
+      title: 'KENZH Shop',
+      meta: [
+        {name: 'description', content: 'Everything my shop'}
+      ],
+      link: [
+        {rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+      ]
+    }
+  }
 })

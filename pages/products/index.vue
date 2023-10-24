@@ -12,6 +12,12 @@
 const url = 'https://fakestoreapi.com/products'
 const { data: products } = await useFetch(url)
 
+useHead({
+    title: 'KENZH Shop | Merch',
+    meta: [
+      { name: 'description', content: 'KENZH Shop Merch'}
+    ]
+  })
 definePageMeta({
     layout: 'products'
 })
